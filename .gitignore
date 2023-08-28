@@ -2,3 +2,7 @@ node_modules/
 .replit
 replit.nix
 coverage/
+.cache/
+./config/
+.upm/
+yarn-error.log*
