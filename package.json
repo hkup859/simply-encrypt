@@ -1,6 +1,6 @@
 {
   "name": "simply-encrypt",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Provide a simple and reasonably secure way to encrypt any data type using a variety of encryption algorithms",
   "main": "./src/index.ts",
   "scripts": {
