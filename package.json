@@ -1,16 +1,18 @@
 {
   "name": "simply-encrypt",
-  "version": "1.0.3",
+  "version": "0.1.0",
   "description": "Provide a simple and reasonably secure way to encrypt any data type using a variety of encryption algorithms",
-  "main": "./src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "build": "tsc && yarn lint",
     "lint": "ts-standard",
     "lint:fix": "ts-standard --fix",
     "test": "jest --coverage",
     "test:debug": "jest --verbose"
   },
   "author": "hkup859",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "@types/jest": "^29.5.3",

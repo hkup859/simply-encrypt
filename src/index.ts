@@ -37,7 +37,7 @@ export const multiEncrypt = (data: Buffer, password: string, algorithms?: Algori
     algorithms = shuffle(Object.keys(SUPPORTED_ALGORITHMS)) as Algorithm[]
   }
   algorithms.forEach((algorithm) => {
-    const headerInfo = ALGORITHM_LABELS[Object.keys(SUPPORTED_ALGORITHMS).indexOf(algorithm)]
+    const headerInfo = ALGORITHM_LABELS[Object.keys(SUPPORTED_ALGORITHMS).indexOf(algorithm)] ?? Buffer.from('')
     const partialData = encrypt(Buffer.from(dataInProgress), password, algorithm)
     dataInProgress = Buffer.concat([headerInfo, partialData])
   })
